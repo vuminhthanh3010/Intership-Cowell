@@ -1,12 +1,11 @@
 import UIKit
 
-func CountA(string:String) -> Int{
-    var n  =   0
-    for str in string{
-        if str == "a" || str == "A" {
-            n += 1
-        }
-    }
-    return n
-}
-CountA(string: "Radar")
+
+
+let string  =   "Radar"
+let filterStr   =   string.uppercased().filter{$0 != "A"}
+let countStr    =   string.count - filterStr.count
+print(countStr)
+
+
+

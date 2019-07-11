@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eM0-su-mIG">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Nt-0F-Mp7">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ycd-Z9-IRz">
+                                    <size key="itemSize" width="158" height="224"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pkN-Jl-Ap1">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="U4i-5T-vIZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="xEl-Dr-eII">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="U4i-5T-vIZ" secondAttribute="bottom" id="2mc-R5-HeA"/>
+                                            <constraint firstItem="xEl-Dr-eII" firstAttribute="top" secondItem="pkN-Jl-Ap1" secondAttribute="top" id="Abt-HH-Oiw"/>
+                                            <constraint firstAttribute="bottom" secondItem="xEl-Dr-eII" secondAttribute="bottom" id="FM7-i7-3nf"/>
+                                            <constraint firstAttribute="trailing" secondItem="xEl-Dr-eII" secondAttribute="trailing" id="NRA-Vc-DA3"/>
+                                            <constraint firstItem="xEl-Dr-eII" firstAttribute="leading" secondItem="pkN-Jl-Ap1" secondAttribute="leading" id="X0n-Is-P0v"/>
+                                            <constraint firstItem="U4i-5T-vIZ" firstAttribute="leading" secondItem="pkN-Jl-Ap1" secondAttribute="leading" id="aEz-86-aFK"/>
+                                            <constraint firstItem="U4i-5T-vIZ" firstAttribute="top" secondItem="pkN-Jl-Ap1" secondAttribute="top" id="aj0-M4-5qE"/>
+                                            <constraint firstAttribute="trailing" secondItem="U4i-5T-vIZ" secondAttribute="trailing" id="nch-ti-kve"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Nt-0F-Mp7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B0r-pt-WfX"/>
+                            <constraint firstItem="eM0-su-mIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K57-m7-ShO"/>
+                            <constraint firstItem="eM0-su-mIG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OqM-tJ-le0"/>
+                            <constraint firstAttribute="trailing" secondItem="eM0-su-mIG" secondAttribute="trailing" id="SNJ-HD-qxs"/>
+                            <constraint firstAttribute="bottom" secondItem="6Nt-0F-Mp7" secondAttribute="bottom" id="T3P-MY-6oD"/>
+                            <constraint firstItem="6Nt-0F-Mp7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T80-ku-IUK"/>
+                            <constraint firstAttribute="bottom" secondItem="eM0-su-mIG" secondAttribute="bottom" id="tt0-X5-VTf"/>
+                            <constraint firstAttribute="trailing" secondItem="6Nt-0F-Mp7" secondAttribute="trailing" id="vMw-6C-7l1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="-313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="158" height="224"/>
+        <image name="background" width="736" height="414"/>
+        <image name="card1" width="158" height="224"/>
+    </resources>
+</document>
